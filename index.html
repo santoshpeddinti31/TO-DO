@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="fevicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- header part -->
+
+    <header>
+      <span class="material-symbols-outlined" id="cir"> check_circle </span
+      >To-Do App
+    </header>
+
+    <!-- input value part -->
+
+    <div class="cont">
+      <form>
+        <input
+          type="text"
+          id="task-input"
+          placeholder="add your work here...."
+          autofocus
+          maxlength="50"
+          minlength="1"
+        />
+        <button type="button" id="task-add" onclick="addTask()">Ok</button>
+      </form>
+      <br />
+    </div>
+
+    <!-- adding list part -->
+
+    <div class="list">
+      <h6>Activity</h6>
+      <ul id="task-list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
